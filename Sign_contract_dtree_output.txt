@@ -1,0 +1,244 @@
+Variable input values:
+                     
+P(S1)            0.97
+P(F1)            0.03
+P(S2)            0.47
+P(F2)            0.53
+P(S3)            0.80
+P(F3)            0.20
+Successful 1250000.00
+Failure    -300000.00
+
+Initial decision tree:
+                                              Probability       Payoff       Cost     Type
+ The Investor's Dilemmar                                                                  
+  ¦--Angel Investment                                        50,000.00            decision
+  ¦   ¦--Market Analysis                                                10,000.00 decision
+  ¦   ¦   ¦--Success                              66.00 %                           chance
+  ¦   ¦   ¦   ¦--Feasibility Study                                      50,000.00 decision
+  ¦   ¦   ¦   ¦   ¦--Feasible                     50.00 %                           chance
+  ¦   ¦   ¦   ¦   ¦   ¦--R&D                                           500,000.00 decision
+  ¦   ¦   ¦   ¦   ¦   ¦   ¦--Enter Market                                         decision
+  ¦   ¦   ¦   ¦   ¦   ¦   ¦   ¦--Success          97.00 % 1,250,000.00              chance
+  ¦   ¦   ¦   ¦   ¦   ¦   ¦   °--Failure           3.00 %  -300,000.00              chance
+  ¦   ¦   ¦   ¦   ¦   ¦   °--Quit                                 0.00            decision
+  ¦   ¦   ¦   ¦   ¦   °--No R&D                                   0.00            decision
+  ¦   ¦   ¦   ¦   °--No Feasible                  50.00 %         0.00              chance
+  ¦   ¦   ¦   °--Quit                                             0.00            decision
+  ¦   ¦   °--Failure                              34.00 %                           chance
+  ¦   ¦       ¦--Feasibility Study                                      50,000.00 decision
+  ¦   ¦       ¦   ¦--Feasible                     50.00 %                           chance
+  ¦   ¦       ¦   ¦   ¦--R&D                                           500,000.00 decision
+  ¦   ¦       ¦   ¦   ¦   ¦--Enter Market                                         decision
+  ¦   ¦       ¦   ¦   ¦   ¦   ¦--Success          97.00 % 1,250,000.00              chance
+  ¦   ¦       ¦   ¦   ¦   ¦   °--Failure           3.00 %  -300,000.00              chance
+  ¦   ¦       ¦   ¦   ¦   °--Quit                                 0.00            decision
+  ¦   ¦       ¦   ¦   °--No R&D                                   0.00            decision
+  ¦   ¦       ¦   °--No Feasible                  50.00 %         0.00              chance
+  ¦   ¦       °--Quit                                             0.00            decision
+  ¦   °--No Market Analysis                                                       decision
+  ¦       °--Feasibility Study                                          50,000.00 decision
+  ¦           ¦--Feasible                         50.00 %                           chance
+  ¦           ¦   ¦--R&D                                               500,000.00 decision
+  ¦           ¦   ¦   ¦--Enter Market                                             decision
+  ¦           ¦   ¦   ¦   ¦--Success              80.00 % 1,250,000.00              chance
+  ¦           ¦   ¦   ¦   °--Failure              20.00 %  -300,000.00              chance
+  ¦           ¦   ¦   °--After Analysis                                 10,000.00 decision
+  ¦           ¦   ¦       ¦--Successful           66.00 %                           chance
+  ¦           ¦   ¦       ¦   ¦--Enter Market                                     decision
+  ¦           ¦   ¦       ¦   ¦   ¦--Success      97.00 % 1,250,000.00              chance
+  ¦           ¦   ¦       ¦   ¦   °--Failure       3.00 %  -300,000.00              chance
+  ¦           ¦   ¦       ¦   °--Quit                             0.00            decision
+  ¦           ¦   ¦       °--Failure              34.00 %                           chance
+  ¦           ¦   ¦           ¦--Enter Market                                     decision
+  ¦           ¦   ¦           ¦   ¦--Success      47.00 % 1,250,000.00              chance
+  ¦           ¦   ¦           ¦   °--Failure      53.00 %  -300,000.00              chance
+  ¦           ¦   ¦           °--Quit                             0.00            decision
+  ¦           ¦   °--During Analysis                                    10,000.00 decision
+  ¦           ¦       ¦--Successful               66.00 %                           chance
+  ¦           ¦       ¦   ¦--R&D                                       500,000.00 decision
+  ¦           ¦       ¦   ¦   ¦--Enter Market                                     decision
+  ¦           ¦       ¦   ¦   ¦   ¦--Success      97.00 % 1,250,000.00              chance
+  ¦           ¦       ¦   ¦   ¦   °--Failure       3.00 %  -300,000.00              chance
+  ¦           ¦       ¦   ¦   °--Quit                             0.00            decision
+  ¦           ¦       ¦   °--Quit                                 0.00            decision
+  ¦           ¦       °--Failure                  34.00 %                           chance
+  ¦           ¦           ¦--R&D                                       500,000.00 decision
+  ¦           ¦           ¦   ¦--Enter Market                                     decision
+  ¦           ¦           ¦   ¦   ¦--Success      47.00 % 1,250,000.00              chance
+  ¦           ¦           ¦   ¦   °--Failure      53.00 %  -300,000.00              chance
+  ¦           ¦           ¦   °--Quit                             0.00            decision
+  ¦           ¦           °--Quit                                 0.00            decision
+  ¦           °--No Feasible                      50.00 %         0.00              chance
+  °--No Angel Investment                                                          decision
+      ¦--Market Analysis                                                10,000.00 decision
+      ¦   ¦--Successful                           66.00 %                           chance
+      ¦   ¦   °--Feasibility Study                                      10,000.00 decision
+      ¦   ¦       ¦--Feasible                     50.00 %                           chance
+      ¦   ¦       ¦   ¦--R&D                                           500,000.00 decision
+      ¦   ¦       ¦   ¦   ¦--Enter Market                                         decision
+      ¦   ¦       ¦   ¦   ¦   ¦--Success          97.00 % 1,500,000.00              chance
+      ¦   ¦       ¦   ¦   ¦   °--Failure           3.00 %  -300,000.00              chance
+      ¦   ¦       ¦   ¦   °--Quit                                 0.00            decision
+      ¦   ¦       ¦   °--Quit                                     0.00            decision
+      ¦   ¦       °--No Feasible                  50.00 %         0.00              chance
+      ¦   °--Failure                              34.00 %                           chance
+      ¦       ¦--Feasibility Study                                      10,000.00 decision
+      ¦       ¦   ¦--Feasible                     50.00 %                           chance
+      ¦       ¦   ¦   ¦--R&D                                           500,000.00 decision
+      ¦       ¦   ¦   ¦   ¦--Enter Market                                         decision
+      ¦       ¦   ¦   ¦   ¦   ¦--Success          47.00 % 1,500,000.00              chance
+      ¦       ¦   ¦   ¦   ¦   °--Failure          53.00 %  -300,000.00              chance
+      ¦       ¦   ¦   ¦   °--Quit                                 0.00            decision
+      ¦       ¦   ¦   °--Quit                                     0.00            decision
+      ¦       ¦   °--No Feasible                  50.00 %         0.00              chance
+      ¦       °--Quit                                             0.00            decision
+      °--No Market Analysis                                                       decision
+          °--Feasibility Study                                          10,000.00 decision
+              ¦--Feasible                         50.00 %                           chance
+              ¦   ¦--R&D                                               500,000.00 decision
+              ¦   ¦   ¦--Enter Market                                             decision
+              ¦   ¦   ¦   ¦--Success              80.00 % 1,500,000.00              chance
+              ¦   ¦   ¦   °--Failure              20.00 %  -300,000.00              chance
+              ¦   ¦   °--After Analysis                                 10,000.00 decision
+              ¦   ¦       ¦--Success              66.00 %                           chance
+              ¦   ¦       ¦   °--Enter Market                                     decision
+              ¦   ¦       ¦       ¦--Success      97.00 % 1,500,000.00              chance
+              ¦   ¦       ¦       °--Failure       3.00 %  -300,000.00              chance
+              ¦   ¦       °--Failure              34.00 %                           chance
+              ¦   ¦           °--Enter Market                                     decision
+              ¦   ¦               ¦--Success      47.00 % 1,500,000.00              chance
+              ¦   ¦               °--Failure      53.00 %  -300,000.00              chance
+              ¦   °--During Analysis                                    10,000.00 decision
+              ¦       ¦--Successful               66.00 %                           chance
+              ¦       ¦   ¦--R&D                                       500,000.00 decision
+              ¦       ¦   ¦   ¦--Enter Market                                     decision
+              ¦       ¦   ¦   ¦   ¦--Success      97.00 % 1,500,000.00              chance
+              ¦       ¦   ¦   ¦   °--Failure       3.00 %  -300,000.00              chance
+              ¦       ¦   ¦   °--Quit                             0.00            decision
+              ¦       ¦   °--Quit                                 0.00            decision
+              ¦       °--Failure                  34.00 %                           chance
+              ¦           ¦--R&D                                       500,000.00 decision
+              ¦           ¦   ¦--Enter Market                                     decision
+              ¦           ¦   ¦   ¦--Success      47.00 % 1,500,000.00              chance
+              ¦           ¦   ¦   °--Failure      53.00 %  -300,000.00              chance
+              ¦           ¦   °--Quit                             0.00            decision
+              ¦           °--Quit                                 0.00            decision
+              °--Quit                             50.00 %         0.00              chance
+
+Final decision tree:
+                                              Probability       Payoff       Cost     Type
+ The Investor's Dilemmar                                    310,000.00                    
+  ¦--Angel Investment                                       291,750.00            decision
+  ¦   ¦--Market Analysis                                    291,750.00  10,000.00 decision
+  ¦   ¦   ¦--Success                              66.00 %   301,750.00              chance
+  ¦   ¦   ¦   ¦--Feasibility Study                          301,750.00  50,000.00 decision
+  ¦   ¦   ¦   ¦   ¦--Feasible                     50.00 %   703,500.00              chance
+  ¦   ¦   ¦   ¦   ¦   ¦--R&D                                703,500.00 500,000.00 decision
+  ¦   ¦   ¦   ¦   ¦   ¦   ¦--Enter Market                 1,203,500.00            decision
+  ¦   ¦   ¦   ¦   ¦   ¦   ¦   ¦--Success          97.00 % 1,250,000.00              chance
+  ¦   ¦   ¦   ¦   ¦   ¦   ¦   °--Failure           3.00 %  -300,000.00              chance
+  ¦   ¦   ¦   ¦   ¦   ¦   °--Quit                                 0.00            decision
+  ¦   ¦   ¦   ¦   ¦   °--No R&D                                   0.00            decision
+  ¦   ¦   ¦   ¦   °--No Feasible                  50.00 %         0.00              chance
+  ¦   ¦   ¦   °--Quit                                             0.00            decision
+  ¦   ¦   °--Failure                              34.00 %   301,750.00              chance
+  ¦   ¦       ¦--Feasibility Study                          301,750.00  50,000.00 decision
+  ¦   ¦       ¦   ¦--Feasible                     50.00 %   703,500.00              chance
+  ¦   ¦       ¦   ¦   ¦--R&D                                703,500.00 500,000.00 decision
+  ¦   ¦       ¦   ¦   ¦   ¦--Enter Market                 1,203,500.00            decision
+  ¦   ¦       ¦   ¦   ¦   ¦   ¦--Success          97.00 % 1,250,000.00              chance
+  ¦   ¦       ¦   ¦   ¦   ¦   °--Failure           3.00 %  -300,000.00              chance
+  ¦   ¦       ¦   ¦   ¦   °--Quit                                 0.00            decision
+  ¦   ¦       ¦   ¦   °--No R&D                                   0.00            decision
+  ¦   ¦       ¦   °--No Feasible                  50.00 %         0.00              chance
+  ¦   ¦       °--Quit                                             0.00            decision
+  ¦   °--No Market Analysis                                 177,155.00            decision
+  ¦       °--Feasibility Study                              177,155.00  50,000.00 decision
+  ¦           ¦--Feasible                         50.00 %   454,310.00              chance
+  ¦           ¦   ¦--R&D                                    440,000.00 500,000.00 decision
+  ¦           ¦   ¦   ¦--Enter Market                       940,000.00            decision
+  ¦           ¦   ¦   ¦   ¦--Success              80.00 % 1,250,000.00              chance
+  ¦           ¦   ¦   ¦   °--Failure              20.00 %  -300,000.00              chance
+  ¦           ¦   ¦   °--After Analysis                     930,000.00  10,000.00 decision
+  ¦           ¦   ¦       ¦--Successful           66.00 % 1,203,500.00              chance
+  ¦           ¦   ¦       ¦   ¦--Enter Market             1,203,500.00            decision
+  ¦           ¦   ¦       ¦   ¦   ¦--Success      97.00 % 1,250,000.00              chance
+  ¦           ¦   ¦       ¦   ¦   °--Failure       3.00 %  -300,000.00              chance
+  ¦           ¦   ¦       ¦   °--Quit                             0.00            decision
+  ¦           ¦   ¦       °--Failure              34.00 %   428,500.00              chance
+  ¦           ¦   ¦           ¦--Enter Market               428,500.00            decision
+  ¦           ¦   ¦           ¦   ¦--Success      47.00 % 1,250,000.00              chance
+  ¦           ¦   ¦           ¦   °--Failure      53.00 %  -300,000.00              chance
+  ¦           ¦   ¦           °--Quit                             0.00            decision
+  ¦           ¦   °--During Analysis                        454,310.00  10,000.00 decision
+  ¦           ¦       ¦--Successful               66.00 %   703,500.00              chance
+  ¦           ¦       ¦   ¦--R&D                            703,500.00 500,000.00 decision
+  ¦           ¦       ¦   ¦   ¦--Enter Market             1,203,500.00            decision
+  ¦           ¦       ¦   ¦   ¦   ¦--Success      97.00 % 1,250,000.00              chance
+  ¦           ¦       ¦   ¦   ¦   °--Failure       3.00 %  -300,000.00              chance
+  ¦           ¦       ¦   ¦   °--Quit                             0.00            decision
+  ¦           ¦       ¦   °--Quit                                 0.00            decision
+  ¦           ¦       °--Failure                  34.00 %         0.00              chance
+  ¦           ¦           ¦--R&D                            -71,500.00 500,000.00 decision
+  ¦           ¦           ¦   ¦--Enter Market               428,500.00            decision
+  ¦           ¦           ¦   ¦   ¦--Success      47.00 % 1,250,000.00              chance
+  ¦           ¦           ¦   ¦   °--Failure      53.00 %  -300,000.00              chance
+  ¦           ¦           ¦   °--Quit                             0.00            decision
+  ¦           ¦           °--Quit                                 0.00            decision
+  ¦           °--No Feasible                      50.00 %         0.00              chance
+  °--No Angel Investment                                    310,000.00            decision
+      ¦--Market Analysis                                    300,000.00  10,000.00 decision
+      ¦   ¦--Successful                           66.00 %   463,000.00              chance
+      ¦   ¦   °--Feasibility Study                          463,000.00  10,000.00 decision
+      ¦   ¦       ¦--Feasible                     50.00 %   946,000.00              chance
+      ¦   ¦       ¦   ¦--R&D                                946,000.00 500,000.00 decision
+      ¦   ¦       ¦   ¦   ¦--Enter Market                 1,446,000.00            decision
+      ¦   ¦       ¦   ¦   ¦   ¦--Success          97.00 % 1,500,000.00              chance
+      ¦   ¦       ¦   ¦   ¦   °--Failure           3.00 %  -300,000.00              chance
+      ¦   ¦       ¦   ¦   °--Quit                                 0.00            decision
+      ¦   ¦       ¦   °--Quit                                     0.00            decision
+      ¦   ¦       °--No Feasible                  50.00 %         0.00              chance
+      ¦   °--Failure                              34.00 %    13,000.00              chance
+      ¦       ¦--Feasibility Study                           13,000.00  10,000.00 decision
+      ¦       ¦   ¦--Feasible                     50.00 %    46,000.00              chance
+      ¦       ¦   ¦   ¦--R&D                                 46,000.00 500,000.00 decision
+      ¦       ¦   ¦   ¦   ¦--Enter Market                   546,000.00            decision
+      ¦       ¦   ¦   ¦   ¦   ¦--Success          47.00 % 1,500,000.00              chance
+      ¦       ¦   ¦   ¦   ¦   °--Failure          53.00 %  -300,000.00              chance
+      ¦       ¦   ¦   ¦   °--Quit                                 0.00            decision
+      ¦       ¦   ¦   °--Quit                                     0.00            decision
+      ¦       ¦   °--No Feasible                  50.00 %         0.00              chance
+      ¦       °--Quit                                             0.00            decision
+      °--No Market Analysis                                 310,000.00            decision
+          °--Feasibility Study                              310,000.00  10,000.00 decision
+              ¦--Feasible                         50.00 %   640,000.00              chance
+              ¦   ¦--R&D                                    640,000.00 500,000.00 decision
+              ¦   ¦   ¦--Enter Market                     1,140,000.00            decision
+              ¦   ¦   ¦   ¦--Success              80.00 % 1,500,000.00              chance
+              ¦   ¦   ¦   °--Failure              20.00 %  -300,000.00              chance
+              ¦   ¦   °--After Analysis                   1,130,000.00  10,000.00 decision
+              ¦   ¦       ¦--Success              66.00 % 1,446,000.00              chance
+              ¦   ¦       ¦   °--Enter Market             1,446,000.00            decision
+              ¦   ¦       ¦       ¦--Success      97.00 % 1,500,000.00              chance
+              ¦   ¦       ¦       °--Failure       3.00 %  -300,000.00              chance
+              ¦   ¦       °--Failure              34.00 %   546,000.00              chance
+              ¦   ¦           °--Enter Market               546,000.00            decision
+              ¦   ¦               ¦--Success      47.00 % 1,500,000.00              chance
+              ¦   ¦               °--Failure      53.00 %  -300,000.00              chance
+              ¦   °--During Analysis                        630,000.00  10,000.00 decision
+              ¦       ¦--Successful               66.00 %   946,000.00              chance
+              ¦       ¦   ¦--R&D                            946,000.00 500,000.00 decision
+              ¦       ¦   ¦   ¦--Enter Market             1,446,000.00            decision
+              ¦       ¦   ¦   ¦   ¦--Success      97.00 % 1,500,000.00              chance
+              ¦       ¦   ¦   ¦   °--Failure       3.00 %  -300,000.00              chance
+              ¦       ¦   ¦   °--Quit                             0.00            decision
+              ¦       ¦   °--Quit                                 0.00            decision
+              ¦       °--Failure                  34.00 %    46,000.00              chance
+              ¦           ¦--R&D                             46,000.00 500,000.00 decision
+              ¦           ¦   ¦--Enter Market               546,000.00            decision
+              ¦           ¦   ¦   ¦--Success      47.00 % 1,500,000.00              chance
+              ¦           ¦   ¦   °--Failure      53.00 %  -300,000.00              chance
+              ¦           ¦   °--Quit                             0.00            decision
+              ¦           °--Quit                                 0.00            decision
+              °--Quit                             50.00 %         0.00              chance
