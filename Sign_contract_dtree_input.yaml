@@ -62,10 +62,10 @@ Angel Investment:
                         Enter Market: 
                             type: chance
                             Success: 
-                                p: 0.97
+                                p: 0.47
                                 payoff: 1250000
                             Failure: 
-                                p: 0.03
+                                p: 0.53
                                 payoff: -300000
                         Quit: 
                             payoff: 0
@@ -175,7 +175,7 @@ No Angel Investment:
             p: 0.66
             type: decision
             Feasibility Study: 
-                cost: 10000
+                cost: 50000
                 type: chance
                 Feasible: 
                     p: 0.5
@@ -202,7 +202,7 @@ No Angel Investment:
             p: 0.34
             type: decision
             Feasibility Study: 
-                cost: 10000
+                cost: 50000
                 type: chance
                 Feasible: 
                     p: 0.5
@@ -230,7 +230,7 @@ No Angel Investment:
     No Market Analysis: 
         type: decision
         Feasibility Study: 
-            cost: 10000
+            cost: 50000
             type: chance
             Feasible: 
                 p: 0.5
