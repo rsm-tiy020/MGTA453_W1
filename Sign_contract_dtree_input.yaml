@@ -1,0 +1,316 @@
+name: The Investor’s Dilemmar
+variables: 
+    ## Given probabilities
+    P(S1): 0.97
+    P(F1): 0.03
+    P(S2): 0.47
+    P(F2): 0.53
+    P(S3): 0.8
+    P(F3): 0.2
+    ## Defined costs and payoffs
+    Successful: 1250000
+    Failure: -300000
+    ## Derived values
+type: decision
+Angel Investment: 
+    payoff: 50000
+    type: decision
+    Market Analysis: 
+        cost: 10000
+        type: chance
+        Success: 
+            p: 0.66
+            type: decision
+            Feasibility Study: 
+                cost: 50000
+                type: chance
+                Feasible: 
+                    p: 0.5
+                    type: decision
+                    R&D: 
+                        cost: 500000
+                        type: decision
+                        Enter Market: 
+                            type: chance
+                            Success: 
+                                p: 0.97
+                                payoff: 1250000
+                            Failure: 
+                                p: 0.03
+                                payoff: -300000
+                        Quit: 
+                            payoff: 0
+                    No R&D: 
+                        payoff: 0
+                No Feasible: 
+                    p: 0.5
+                    payoff: 0
+            Quit: 
+                payoff: 0
+        Failure: 
+            p: 0.34
+            type: decision
+            Feasibility Study: 
+                cost: 50000
+                type: chance
+                Feasible: 
+                    p: 0.5
+                    type: decision
+                    R&D: 
+                        cost: 500000
+                        type: decision
+                        Enter Market: 
+                            type: chance
+                            Success: 
+                                p: 0.97
+                                payoff: 1250000
+                            Failure: 
+                                p: 0.03
+                                payoff: -300000
+                        Quit: 
+                            payoff: 0
+                    No R&D: 
+                        payoff: 0
+                No Feasible: 
+                    p: 0.5
+                    payoff: 0
+            Quit: 
+                payoff: 0
+    No Market Analysis: 
+        type: decision
+        Feasibility Study: 
+            cost: 50000
+            type: chance
+            Feasible: 
+                p: 0.5
+                type: decision
+                R&D: 
+                    cost: 500000
+                    type: decision
+                    Enter Market: 
+                        type: chance
+                        Success: 
+                            p: 0.8
+                            payoff: 1250000
+                        Failure: 
+                            p: 0.2
+                            payoff: -300000
+                    After Analysis: 
+                        cost: 10000
+                        type: chance
+                        Successful: 
+                            p: 0.66
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.97
+                                    payoff: 1250000
+                                Failure: 
+                                    p: 0.03
+                                    payoff: -300000
+                            Quit: 
+                                payoff: 0
+                        Failure: 
+                            p: 0.34
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.47
+                                    payoff: 1250000
+                                Failure: 
+                                    p: 0.53
+                                    payoff: -300000
+                            Quit: 
+                                payoff: 0
+                During Analysis: 
+                    cost: 10000
+                    type: chance
+                    Successful: 
+                        p: 0.66
+                        type: decision
+                        R&D: 
+                            cost: 500000
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.97
+                                    payoff: 1250000
+                                Failure: 
+                                    p: 0.03
+                                    payoff: -300000
+                            Quit: 
+                                payoff: 0
+                        Quit: 
+                            payoff: 0
+                    Failure: 
+                        p: 0.34
+                        type: decision
+                        R&D: 
+                            cost: 500000
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.47
+                                    payoff: 1250000
+                                Failure: 
+                                    p: 0.53
+                                    payoff: -300000
+                            Quit: 
+                                payoff: 0
+                        Quit: 
+                            payoff: 0
+            No Feasible: 
+                p: 0.5
+                payoff: 0
+No Angel Investment: 
+    type: decision
+    Market Analysis: 
+        cost: 10000
+        type: chance
+        Successful: 
+            p: 0.66
+            type: decision
+            Feasibility Study: 
+                cost: 10000
+                type: chance
+                Feasible: 
+                    p: 0.5
+                    type: decision
+                    R&D: 
+                        cost: 500000
+                        type: decision
+                        Enter Market: 
+                            type: chance
+                            Success: 
+                                p: 0.97
+                                payoff: 1500000
+                            Failure: 
+                                p: 0.03
+                                payoff: -300000
+                        Quit: 
+                            payoff: 0
+                    Quit: 
+                        payoff: 0
+                No Feasible : 
+                    p: 0.5
+                    payoff: 0
+        Failure: 
+            p: 0.34
+            type: decision
+            Feasibility Study: 
+                cost: 10000
+                type: chance
+                Feasible: 
+                    p: 0.5
+                    type: decision
+                    R&D: 
+                        cost: 500000
+                        type: decision
+                        Enter Market: 
+                            type: chance
+                            Success: 
+                                p: 0.47
+                                payoff: 1500000
+                            Failure: 
+                                p: 0.53
+                                payoff: -300000
+                        Quit: 
+                            payoff: 0
+                    Quit: 
+                        payoff: 0
+                No Feasible: 
+                    p: 0.5
+                    payoff: 0
+            Quit: 
+                payoff: 0
+    No Market Analysis: 
+        type: decision
+        Feasibility Study: 
+            cost: 10000
+            type: chance
+            Feasible: 
+                p: 0.5
+                type: decision
+                R&D: 
+                    cost: 500000
+                    type: decision
+                    Enter Market: 
+                        type: chance
+                        Success: 
+                            p: 0.8
+                            payoff: 1500000
+                        Failure: 
+                            p: 0.2
+                            payoff: -300000
+                    After Analysis: 
+                        cost: 10000
+                        type: chance
+                        Success: 
+                            p: 0.66
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.97
+                                    payoff: 1500000
+                                Failure: 
+                                    p: 0.03
+                                    payoff: -300000
+                        Failure: 
+                            p: 0.34
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.47
+                                    payoff: 1500000
+                                Failure: 
+                                    p: 0.53
+                                    payoff: -300000
+                During Analysis: 
+                    cost: 10000
+                    type: chance
+                    Successful: 
+                        p: 0.66
+                        type: decision
+                        R&D: 
+                            cost: 500000
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.97
+                                    payoff: 1500000
+                                Failure: 
+                                    p: 0.03
+                                    payoff: -300000
+                            Quit: 
+                                payoff: 0
+                        Quit: 
+                            payoff: 0
+                    Failure: 
+                        p: 0.34
+                        type: decision
+                        R&D: 
+                            cost: 500000
+                            type: decision
+                            Enter Market: 
+                                type: chance
+                                Success: 
+                                    p: 0.47
+                                    payoff: 1500000
+                                Failure: 
+                                    p: 0.53
+                                    payoff: -300000
+                            Quit: 
+                                payoff: 0
+                        Quit: 
+                            payoff: 0
+            Quit: 
+                p: 0.5
+                payoff: 0
+
